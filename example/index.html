@@ -9,7 +9,7 @@
     function subscribe() {
       navigator.serviceWorker.ready
         .then(function(registration) {
-          const vapidPublicKey = '<YOUR_VAPID_PUBLIC_KEY>';
+          const vapidPublicKey = 'BG3BBbmoXKl89s1bX5_iK2KPlxZkiOaYVpC9dzO7Wjm7kSw7FFtI9YmoeIcO8Bd-ktm3Am1qKD6isrEbB-C1aDg';
 
           return registration.pushManager.subscribe({
             userVisibleOnly: true,

@@ -95,6 +95,8 @@ func SendNotification(message []byte, s *Subscription, options *Options) (*http.
 
 	localPublicKey := elliptic.Marshal(curve, x, y)
 
+
+	fmt.Println("HAHAH HERE")
 	// Combine application keys with dh
 	sharedX, sharedY := elliptic.Unmarshal(curve, dh)
 	if sharedX == nil {
